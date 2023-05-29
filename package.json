@@ -4,19 +4,31 @@
   "description": "A fictional bookkeeper website",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:all": "lite-server"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "watch:all": "parallelshell 'npm run lite'"
   },
   "author": "Alexis Winters",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-social": "^5.1.1",
+    "firebase": "^9.22.1",
     "font-awesome": "^4.7.0"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.4.1",
+    "imagemin-cli": "^7.0.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "usemin-cli": "^0.6.0"
   }
 }
