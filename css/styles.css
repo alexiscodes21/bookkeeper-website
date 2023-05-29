@@ -268,3 +268,33 @@ img {
     border-color: var(--color-darkgreen);
     border-width: .2rem;
 }
+
+footer li,
+footer p,
+footer a {
+    color: var(--color-graygreen);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--color-darkgreen);
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--color-darkgreen);
+}
