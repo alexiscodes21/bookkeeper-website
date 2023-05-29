@@ -52,7 +52,7 @@ img {
 }
 
 .section-padding {
-  padding: 140px 0;
+  padding: 8rem 0;
 }
 
 .theme-shadow {
@@ -69,9 +69,9 @@ img {
 
 .btn {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: uppercase;
-  border-radius: 15px;
+  border-radius: 1rem;
   padding: 10px 24px;
 }
 
@@ -107,30 +107,30 @@ img {
 }
 
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .section-title .line {
-  width: 60px;
-  height: 4px;
+  width: 4rem;
+  height: .25rem;
   background-color: var(--color-darkgreen);
-  margin: 16px auto 24px auto;
+  margin: 1rem auto 1.5rem auto;
 }
 
 .section-title p {
-  max-width: 575px;
+  max-width: 36rem;
   margin: 0 auto;
 }
 
 .iconbox {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: rgba(var(--color-darkgreen-rgb), 0.1);
   color: var(--color-darkgreen);
-  font-size: 45px;
+  font-size: 3rem;
   flex: none;
 }
 
@@ -138,13 +138,13 @@ img {
   position: relative;
   overflow: hidden;
   z-index: 2;
-  height: 325px;
+  height: 20rem;
 }
 
 .service::after {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background: rgba(var(--color-darkgreen-rgb), 0.2);
   position: absolute;
   bottom: 0;
@@ -212,7 +212,7 @@ img {
   text-align: center;
   background: linear-gradient(-45deg, var(--color-lightgreen) 0%, var(--color-darkgreen) 100%);
   color: var(--color-white);
-  padding: 20px;
+  padding: 1.25rem;
   line-height: 1.5;
   pointer-events: none;
   transform: translateY(96%);
@@ -220,7 +220,7 @@ img {
 }
 
 .card .content .heading {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -240,10 +240,9 @@ img {
 
 .review-head::after {
     content: "";
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     position: absolute;
-    bottom: -14px;
     background-color: var(--color-white);
     transform: rotate(45deg);
 }
@@ -280,19 +279,19 @@ footer ul {
 }
 
 footer .line {
-    width: 40px;
-    height: 4px;
+    width: 2.5rem;
+    height: .25rem;
     background-color: var(--color-darkgreen);
 }
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-white);
-    border-radius: 100px;
+    border-radius: 6.25rem;
 }
 
 .social-icons a:hover {
