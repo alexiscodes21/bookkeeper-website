@@ -227,3 +227,29 @@ img {
 .card:hover .content {
   transform: translateY(0);
 }
+
+.review small {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-darkgreen);
+}
+
+.review-head {
+    position: relative;
+}
+
+.review-head::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14px;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+}
+
+.review-person img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
