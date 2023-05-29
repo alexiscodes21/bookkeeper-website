@@ -1,160 +1,229 @@
 :root {
-    --color-dark: #060f06;
-    --color-darkgreen: #007F00;
-    --color-lightgreen: #73CC73;
-    --color-darkgreen-rgb: 0, 127, 0;
-    --color-graygreen: #808060;
-    --color-white: #ffffff;
-    --font-base: "Roboto", sans-serif;
-    --box-shadow: 0 15px 25px rgba(0, 0, 0, 0.20);
-    --transition: all 500ms ease;
+  --color-dark: #060f06;
+  --color-darkgreen: #007f00;
+  --color-lightgreen: #73cc73;
+  --color-darkgreen-rgb: 0, 127, 0;
+  --color-graygreen: #808060;
+  --color-white: #ffffff;
+  --font-base: "Roboto", sans-serif;
+  --box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  --transition: all 500ms ease;
+  --transition2: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 body {
-    font-family: var(--font-base);
-    line-height: 1.7;
-    color: var(--color-graygreen);
+  font-family: var(--font-base);
+  line-height: 1.7;
+  color: var(--color-graygreen);
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 .h6 {
-    font-weight: 600;
-    color: var(--color-dark);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 .h6 {
+  font-weight: 600;
+  color: var(--color-dark);
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-darkgreen);
-    transition: var(--transition);
+  text-decoration: none;
+  color: var(--color-darkgreen);
+  transition: var(--transition);
 }
 
 a:hover {
-    color: var(--color-lightgreen);
+  color: var(--color-lightgreen);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
-    width: 8rem;
+  width: 8rem;
 }
 
 .section-padding {
-    padding: 140px 0;
+  padding: 140px 0;
 }
 
 .theme-shadow {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .navbar {
-    box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--color-darkgreen);
+  color: var(--color-darkgreen);
 }
 
 .btn {
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 15px;
-    padding: 10px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 10px 24px;
 }
 
 .btn-brand {
-    background-color: var(--color-darkgreen);
-    border: var(--color-darkgreen);
-    color: var(--color-white);
+  background-color: var(--color-darkgreen);
+  border: var(--color-darkgreen);
+  color: var(--color-white);
 }
 
 .btn-brand:hover {
-    background-color: var(--color-lightgreen);
-    border-color: var(--color-lightgreen);
-    color: var(--color-dark);
-    box-shadow: var(--box-shadow);
+  background-color: var(--color-lightgreen);
+  border-color: var(--color-lightgreen);
+  color: var(--color-dark);
+  box-shadow: var(--box-shadow);
 }
 
 #home {
-    position: relative;
+  position: relative;
 }
 
 #home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(/img/coverphoto.jpg);
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/img/coverphoto.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .section-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .section-title .line {
-    width: 60px;
-    height: 4px;
-    background-color: var(--color-darkgreen);
-    margin: 16px auto 24px auto;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-darkgreen);
+  margin: 16px auto 24px auto;
 }
 
 .section-title p {
-    max-width: 575px;
-    margin: 0 auto;
+  max-width: 575px;
+  margin: 0 auto;
 }
 
 .iconbox {
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(var(--color-darkgreen-rgb), 0.1);
-    color: var(--color-darkgreen);
-    font-size: 45px;
-    flex: none;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--color-darkgreen-rgb), 0.1);
+  color: var(--color-darkgreen);
+  font-size: 45px;
+  flex: none;
 }
 
-.service  {
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    height: 325px;
+.service {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  height: 325px;
 }
 
 .service::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: rgba(var(--color-darkgreen-rgb), 0.2);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: var(--transition);
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: rgba(var(--color-darkgreen-rgb), 0.2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: var(--transition);
 }
 
 .service:hover::after {
-    width: 100%;
-    height: 100%;
-    background: var(--color-darkgreen);
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: var(--color-darkgreen);
+  z-index: -1;
 }
 
 .service:hover h5,
 .service:hover p {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .service:hover .iconbox {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
 }
 
+.card-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+  height: 20rem;
+}
+
+.front-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .front-content {
+  display: flex;
+}
+
+.card .front-content p {
+  font-size: 2rem;
+  font-weight: 700;
+  /* opacity: 1; */
+  background: linear-gradient(-45deg, var(--color-lightgreen) 0%, var(--color-darkgreen) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* transition: var(--transition2) */
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(-45deg, var(--color-lightgreen) 0%, var(--color-darkgreen) 100%);
+  color: var(--color-white);
+  padding: 20px;
+  line-height: 1.5;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: var(--transition2);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
