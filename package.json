@@ -21,7 +21,8 @@
     "bootstrap-social": "^5.1.1",
     "firebase": "^9.22.1",
     "font-awesome": "^4.7.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "uglify-js": "^3.17.4"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
